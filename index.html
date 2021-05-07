@@ -59,39 +59,47 @@
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button type="button" class="modal-close button-cursor" data-modal-close>
-            <svg class="modal-close-icon" >
-              <use href="./images/icons/sprite-optimized.svg#icon-close-button" ></use>
+            <svg class="modal-close-icon">
+              <use href="./images/icons/sprite-optimized.svg#icon-close-button"></use>
             </svg>
           </button>
-          <div class="form">
-          <h2 class="modal-heading">Оставьте свои данные, мы вам перезвоним</h2>
-          <div class="form-field">
-          <label class="form-label">
-            Имя
-            <svg width="18px" height="18px" class="form-svg"><use href="./images/icons/sprite-optimized.svg#form-person"></use></svg>
-            <input type="text" name="name" class="form-input"> 
-          </label>
-          
+          <div class="form js-speaker-form">
+            <h2 class="modal-heading">Оставьте свои данные, мы вам перезвоним</h2>
+            <div class="form-field">
+              <label for="name" class="form-label">Имя</label>
+              <input type="text" name="name" id="name" class="form-input" autofocus>
+              <span class="form-svg"><svg>
+                <use href="./images/icons/sprite-optimized.svg#form-person"></use>
+              </svg></span>
+            </div>
+            <div class="form-field">
+              <label for="tel" class="form-label">
+                Телефон
+              </label>
+              <input type="tel" name="tel" id="tel" class="form-input">
+              <span class="form-svg"><svg>
+                  <use href="./images/icons/sprite-optimized.svg#form-phone"></use>
+                </svg></span>
+            </div>
+            <div class="form-field">
+              <label for="email" class="form-label">Почта                
+              </label>
+              <input type="email" name="email" id="email" class="form-input">
+              <span class="form-svg"><svg>
+                <use href="./images/icons/sprite-optimized.svg#form-email"></use>
+              </svg></span>
+            </div>
+            <div class="form-field">
+              <label for="comment" class="form-label">Комментарий</label>
+              <textarea name="comment" id="comment" class="form-comment" placeholder="Введите текст"></textarea>
+            </div>
+            <div class="form-field">
+              <input type="checkbox" name="policy" id="policy" class="checkbox visually-hidden">
+              <label for="policy" class="form-policy">Соглашаюсь с рассылкой и принимаю <a href="#" class="policy-link">Условия
+                  договора</a></label>
+            </div>
+            <button type="submit" class="submit-button button-cursor">Отправить</button>
           </div>
-          <div class="form-field">
-          <label class="form-label">
-            Телефон
-            <input type="tel" name="tel" class="form-input">
-          </label>
-          </div>
-          <div class="form-field">
-          <label class="form-label">
-            Почта
-            <input type="email" name="email" class="form-input">
-          </label>
-          </div>
-          <div class="form-field">
-          <label class="form-label">Комментарий
-            <textarea name="comment" cols="30" rows="10" class="form-comment" placeholder="Введите текст"></textarea>
-            
-          </label>
-          </div>
-        </div>
         </div>
       </div>
     </section>
@@ -150,27 +158,27 @@
         <ul class="activity-list no-bullet list">
           <li>
             <div class="activity-thumb">
-            <img src="./images/img_4.jpg" alt="руки на клавиатуре набирают текст" width="370" height="294" />
-            <div class="activity-name">
-            <p class="activity-text">Десктопные приложения</p>
-          </div>
-          </div>
+              <img src="./images/img_4.jpg" alt="руки на клавиатуре набирают текст" width="370" height="294" />
+              <div class="activity-name">
+                <p class="activity-text">Десктопные приложения</p>
+              </div>
+            </div>
           </li>
           <li>
             <div class="activity-thumb">
-            <img src="./images/img-1.jpg" alt="человек с телефоном в руках" width="370" height="294" />
-            <div class="activity-name">
-            <p class="activity-text">Мобильные приложения</p>
+              <img src="./images/img-1.jpg" alt="человек с телефоном в руках" width="370" height="294" />
+              <div class="activity-name">
+                <p class="activity-text">Мобильные приложения</p>
+              </div>
             </div>
-          </div>
           </li>
           <li>
             <div class="activity-thumb">
-            <img src="./images/img-2.jpg" alt="планшет с палитрой цветов на выбор" width="370" height="294" />
-            <div class="activity-name">
-            <p class="activity-text">Дизайнерские решения</p>
+              <img src="./images/img-2.jpg" alt="планшет с палитрой цветов на выбор" width="370" height="294" />
+              <div class="activity-name">
+                <p class="activity-text">Дизайнерские решения</p>
+              </div>
             </div>
-          </div>
           </li>
         </ul>
       </div>
@@ -403,52 +411,67 @@
         </address>
       </div>
 
-        <div class="join">
-          <p class="join-text">Присоединяйтесь</p>
-          <ul class="sm-icons-footer no-bullet list">
-            <li class="sm-icon">
-              <a href="" target="_blank" rel="noreferrer noopener" class="sm-link-footer">
-                <svg class="sm-svg">
-                  <use href="./images/icons/sprite-optimized.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="sm-icon">
-              <a href="" target="_blank" rel="noreferrer noopener" class="sm-link-footer">
-                <svg class="sm-svg">
-                  <use href="./images/icons/sprite-optimized.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="sm-icon">
-              <a href="" target="_blank" rel="noreferrer noopener" class="sm-link-footer">
-                <svg class="sm-svg">
-                  <use href="./images/icons/sprite-optimized.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="sm-icon">
-              <a href="" target="_blank" rel="noreferrer noopener" class="sm-link-footer">
-                <svg class="sm-svg">
-                  <use href="./images/icons/sprite-optimized.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div class="join">
+        <h2 class="join-text">Присоединяйтесь</h2>
+        <ul class="sm-icons-footer no-bullet list">
+          <li class="sm-icon">
+            <a href="" target="_blank" rel="noreferrer noopener" class="sm-link-footer">
+              <svg class="sm-svg">
+                <use href="./images/icons/sprite-optimized.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sm-icon">
+            <a href="" target="_blank" rel="noreferrer noopener" class="sm-link-footer">
+              <svg class="sm-svg">
+                <use href="./images/icons/sprite-optimized.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sm-icon">
+            <a href="" target="_blank" rel="noreferrer noopener" class="sm-link-footer">
+              <svg class="sm-svg">
+                <use href="./images/icons/sprite-optimized.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sm-icon">
+            <a href="" target="_blank" rel="noreferrer noopener" class="sm-link-footer">
+              <svg class="sm-svg">
+                <use href="./images/icons/sprite-optimized.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sign-up">
+        <h2 class="sign-text">Подпишитесь на рассылку</h2>
+        <label for="sign-up" class="form-label visually-hidden">
+          Почта
+        </label>
+        <input type="sign-up" name="sign-up" class="signup-input" id="sign-up" placeholder="E-mail">
+        <button type="submit" class="submit-button button-cursor">
+          <p class="button-signuptext">Подписаться</p>
+          <span>
+          <svg class="send-svg">
+          <use href="./images/icons/sprite-optimized.svg#icon-send"></use>
+        </svg>
+      </span> 
+    </button>
+      </div>
     </div>
   </footer>
-  <script src="./js/modal.js">  </script>
+  <script src="./js/modal.js"></script>
   <script>
-  (() => {
-    document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-      e.preventDefault();
-  
-      new FormData(e.currentTarget).forEach((value, name) =>
-        console.log(`${name}: ${value}`),
-      );
-    });
-  })();
+    (() => {
+      document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+        e.preventDefault();
+
+        new FormData(e.currentTarget).forEach((value, name) =>
+          console.log(`${name}: ${value}`),
+        );
+      });
+    })();
   </script>
 </body>
 
