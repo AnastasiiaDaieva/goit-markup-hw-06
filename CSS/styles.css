@@ -526,7 +526,7 @@ letter-spacing: 0.03em;
   transform: translateY(-50%) translateX(-50%);
   width: 18px;
   height: 18px;
-  transition: fill var(--accent-cl);
+  transition: fill var(--standard-animation);
 }
 
 .modal-heading {
@@ -550,17 +550,9 @@ margin-bottom: 12px;
   color: var(--main-text-cl);
 }
 
-.form-label {
-  display: block;
-}
-
-.form-label:not(:last-child) {
-  margin-bottom: 4px;
-}
-
-.label-text {
+.svg-cont {
   position: relative;
-  margin-bottom: 4px;
+  margin-top: 4px;
 }
 
 .form-field .form-input {
@@ -571,7 +563,6 @@ textarea::placeholder {
   color: var(--input-placeholder);
 }
 
-
 .form-comment {
   position: relative;
   width: 100%;
@@ -581,6 +572,8 @@ textarea::placeholder {
   border-radius: 4px;
   padding: 12px 16px;
   margin-bottom: 20px;
+  margin-top: 4px;
+  transition: border var(--standard-animation);
 }
 
 .form-input {
@@ -592,6 +585,7 @@ textarea::placeholder {
   box-sizing: border-box;
   border-radius: 4px;
   padding-left: 42px;
+  transition: border var(--standard-animation);
 }
 
 
@@ -601,22 +595,33 @@ textarea::placeholder {
 
 .form-svg {
   position: absolute;
-  display: inline-flex;
+  display: block;
   top: 50%;
   left: 12px;
   width: 18px;
   height: 18px;
   transform: translateY(-50%);
   color: var(--add-cl);
+  transition: fill var(--standard-animation);
 }
 
+.icon {
+position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--add-cl);
+  border-radius: 2px;
+}
 
-.checkbox:checked .check-svg {
+.checkbox:checked + .icon {
+  background-image: url(../images/icons/icon-check.svg);
   background-color: var(--accent-cl);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   border-color: var(--accent-cl);
+  background-origin: border-box;
   }
 
 .form-policy {
@@ -629,37 +634,13 @@ line-height: 1.71px;
 margin-bottom: 30px;
 }
 
-.icon {
-  position: relative;
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 2px solid var(--add-cl);
-  border-radius: 2px;
-}
-
-
-.check-svg {
-  position: absolute;
-  fill: red;
-  top: 0;
-  left: 0;
-  transform: translate(-50%);
-}
-
 .policy-link {
   display: inline-block;
   color: var(--accent-cl);
 }
 
-.checkbox:focus + .icon {
+.checkbox:focus-within + .icon {
   border-color: var(--accent-cl);
-
-}
-
-.checkbox:checked + .icon {
-background-color: var(--accent-cl);
-border-color: var(--accent-cl);
 }
 
 .form-field:focus-within .form-svg {
