@@ -69,8 +69,8 @@
               <label for="name" class="form-label">Имя</label>
               <input type="text" name="name" id="name" class="form-input" autofocus>
               <span class="form-svg"><svg>
-                <use href="./images/icons/sprite-optimized.svg#form-person"></use>
-              </svg></span>
+                  <use href="./images/icons/sprite-optimized.svg#form-person"></use>
+                </svg></span>
             </div>
             <div class="form-field">
               <label for="tel" class="form-label">
@@ -82,22 +82,27 @@
                 </svg></span>
             </div>
             <div class="form-field">
-              <label for="email" class="form-label">Почта                
+              <label for="email" class="form-label">Почта
               </label>
               <input type="email" name="email" id="email" class="form-input">
               <span class="form-svg"><svg>
-                <use href="./images/icons/sprite-optimized.svg#form-email"></use>
-              </svg></span>
+                  <use href="./images/icons/sprite-optimized.svg#form-email"></use>
+                </svg></span>
             </div>
             <div class="form-field">
               <label for="comment" class="form-label">Комментарий</label>
               <textarea name="comment" id="comment" class="form-comment" placeholder="Введите текст"></textarea>
             </div>
             <div class="form-field">
-              <input type="checkbox" name="policy" id="policy" class="checkbox visually-hidden">
-              <label for="policy" class="form-policy">Соглашаюсь с рассылкой и принимаю <a href="#" class="policy-link">Условия
+              <label class="form-policy">
+              <input type="checkbox" name="policy" class="checkbox visually-hidden">
+              <span class="check-svg"><svg >
+                <use href="./images/icons/sprite-optimized.svg#icon-check"></use>
+              </svg></span>
+              Соглашаюсь с рассылкой и принимаю <a href="#" class="policy-link">Условия
                   договора</a></label>
             </div>
+           
             <button type="submit" class="submit-button button-cursor">Отправить</button>
           </div>
         </div>
@@ -453,11 +458,11 @@
         <button type="submit" class="submit-button button-cursor">
           <p class="button-signuptext">Подписаться</p>
           <span>
-          <svg class="send-svg">
-          <use href="./images/icons/sprite-optimized.svg#icon-send"></use>
-        </svg>
-      </span> 
-    </button>
+            <svg class="send-svg">
+              <use href="./images/icons/sprite-optimized.svg#icon-send"></use>
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
   </footer>

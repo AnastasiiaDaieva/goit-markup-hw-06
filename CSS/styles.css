@@ -600,6 +600,15 @@ textarea::placeholder {
   color: var(--add-cl);
 }
 
+
+.checkbox:checked .check-svg {
+  background-color: var(--accent-cl);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-color: var(--accent-cl);
+  }
+
 .form-policy {
 display: inline-flex;
 justify-content: space-evenly;
@@ -609,8 +618,7 @@ line-height: 1.71px;
 margin-bottom: 30px;
 }
 
-.form-policy::before {
-  content: "";
+.check-svg {
   display: inline-block;
   border-radius: 2px;
   border: 2px solid var(--add-cl);
@@ -622,12 +630,9 @@ margin-bottom: 30px;
   color: var(--accent-cl);
 }
 
-.checkbox:checked + .form-policy::before {
-background-image: url(../images/icons/tick-mark.svg);
+
+.checkbox:checked + .check-svg {
 background-color: var(--accent-cl);
-background-repeat: no-repeat;
-background-position: center;
-background-size: contain;
 border-color: var(--accent-cl);
 }
 
